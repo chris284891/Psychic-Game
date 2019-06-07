@@ -7,19 +7,12 @@ var storeduserguess = []
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessesleftText = document.getElementById("guessesleft-text");
-var userguessesText = document.getElementById("usersguesses-text");
-console.log(winsText)
-
-// trying to make it so if user guesses a letter not in array computerGuess they get a loss. if it is they get a win. also 
+var userguessesText = document.getElementById("usersguesses-text"); 
 
 document.onkeyup = function (event) {
     var userGuess = event.key;
     storeduserguess.push(userGuess)
-    console.log(userGuess)
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    console.log(wins)
-    console.log(losses)
-    console.log(guessesleft)
     if (userGuess === computerGuess) {
         wins++;
         storeduserguess = [];
@@ -32,14 +25,11 @@ document.onkeyup = function (event) {
         losses++;0
         guessesleft = 9;
         storeduserguess = [];
-        
     }
-    // i don't know how to make game pick new letter after loss
-    // i don't know how to make read out what user guessed
     winsText.textContent = "Wins: " + wins;
     lossesText.textContent = "Losses: " + losses;
     guessesleftText.textContent = "Guesses left: " + guessesleft;
     userguessesText.textContent = "You guessed: " + storeduserguess;
-    console.log(computerGuess)
-
+    console.log(computerGuess);
+    // The computer is picking a new letter everytime a key is pressed instead of it picking one from the beginning and keeping it :(
 };

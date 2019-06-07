@@ -8,11 +8,11 @@ var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessesleftText = document.getElementById("guessesleft-text");
 var userguessesText = document.getElementById("usersguesses-text"); 
+var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 document.onkeyup = function (event) {
     var userGuess = event.key;
     storeduserguess.push(userGuess)
-    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     if (userGuess === computerGuess) {
         wins++;
         storeduserguess = [];
@@ -31,5 +31,5 @@ document.onkeyup = function (event) {
     guessesleftText.textContent = "Guesses left: " + guessesleft;
     userguessesText.textContent = "You guessed: " + storeduserguess;
     console.log(computerGuess);
-    // The computer is picking a new letter everytime a key is pressed instead of it picking one from the beginning and keeping it :(
+    // The computer is not picking a new letter after a win or loss. :(
 };

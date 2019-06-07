@@ -23,7 +23,7 @@ document.onkeyup = function (event) {
         guessesleft--;
     }
     if (guessesleft === 0) {
-        losses++;0
+        losses++;
         guessesleft = 9;
         storeduserguess = [];
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -32,6 +32,7 @@ document.onkeyup = function (event) {
     lossesText.textContent = "Losses: " + losses;
     guessesleftText.textContent = "Guesses left: " + guessesleft;
     userguessesText.textContent = "You guessed: " + storeduserguess;
+    // look at the console if you want to be a cheater...
     console.log(computerGuess);
-    // The computer is not picking a new letter after a win or loss. :(
+    // The computer is automatically subtracting a guess at the start of each new round. :(
 };

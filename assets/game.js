@@ -17,6 +17,7 @@ document.onkeyup = function (event) {
         wins++;
         storeduserguess = [];
         guessesleft = 9;
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     }
     if (userGuess !== computerGuess) {
         guessesleft--;
@@ -25,6 +26,7 @@ document.onkeyup = function (event) {
         losses++;0
         guessesleft = 9;
         storeduserguess = [];
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     }
     winsText.textContent = "Wins: " + wins;
     lossesText.textContent = "Losses: " + losses;

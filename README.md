@@ -1,5 +1,5 @@
 # Psychic-Game
-This is first JavaScript application.
+This is my first JavaScript application.
 
 # Instructions
 Try to guess which letter the computer is thinking of. Guess correctly and you get a win. Choose carefully since you only have 9 available guesses. Run out of guesses and you get a loss. Good Luck!

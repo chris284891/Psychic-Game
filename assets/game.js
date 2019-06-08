@@ -18,6 +18,8 @@ document.onkeyup = function (event) {
         wins++;
         guessesleft = 9;
         storeduserguess = [];
+        console.log(guessesleft)
+        // When there is a win. A guesses left is taken away.... I don't know why...
     }
     if (userGuess !== computerGuess) {
         guessesleft--;
@@ -34,5 +36,4 @@ document.onkeyup = function (event) {
     userguessesText.textContent = "You guessed: " + storeduserguess;
     // open up the console if you want to be a cheater...
     console.log(computerGuess);
-    // I think..... when there is a win. A guesses left is taken away.... I don't know why...
 };

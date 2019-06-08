@@ -24,7 +24,7 @@ document.onkeyup = function (event) {
     else if (userGuess !== computerGuess) {
         guessesleft--;
     }
-    else if (guessesleft === 0) {
+    if (guessesleft === 0) {
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         losses++;
         guessesleft = 9;

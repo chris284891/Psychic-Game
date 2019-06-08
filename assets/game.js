@@ -9,30 +9,30 @@ var lossesText = document.getElementById("losses-text");
 var guessesleftText = document.getElementById("guessesleft-text");
 var userguessesText = document.getElementById("usersguesses-text"); 
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
+// I couldn't figure out how to make the onkeyup function only accept alphabet keys (still trying(stackoverflow))
 document.onkeyup = function (event) {
     var userGuess = event.key;
     storeduserguess.push(userGuess)
     if (userGuess === computerGuess) {
-        wins++;
-        storeduserguess = [];
-        guessesleft = 9;
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        wins++;
+        guessesleft = 9;
+        storeduserguess = [];
     }
     if (userGuess !== computerGuess) {
         guessesleft--;
     }
     if (guessesleft === 0) {
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         losses++;
         guessesleft = 9;
         storeduserguess = [];
-        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     }
     winsText.textContent = "Wins: " + wins;
     lossesText.textContent = "Losses: " + losses;
     guessesleftText.textContent = "Guesses left: " + guessesleft;
     userguessesText.textContent = "You guessed: " + storeduserguess;
-    // look at the console if you want to be a cheater...
+    // open up the console if you want to be a cheater...
     console.log(computerGuess);
-    // The computer is automatically subtracting a guess at the start of each new round. :(
+    // I think..... when there is a win. A guesses left is taken away.... I don't know why...
 };

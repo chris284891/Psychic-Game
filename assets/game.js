@@ -7,7 +7,7 @@ var storeduserguess = []
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessesleftText = document.getElementById("guessesleft-text");
-var userguessesText = document.getElementById("usersguesses-text"); 
+var userguessesText = document.getElementById("usersguesses-text");
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 // I couldn't figure out how to make the onkeyup function only accept alphabet keys (still trying(stackoverflow))
 document.onkeyup = function (event) {
@@ -21,10 +21,10 @@ document.onkeyup = function (event) {
         console.log(guessesleft)
         // When there is a win. A guesses left is taken away.... I don't know why...
     }
-    if (userGuess !== computerGuess) {
+    else if (userGuess !== computerGuess) {
         guessesleft--;
     }
-    if (guessesleft === 0) {
+    else if (guessesleft === 0) {
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         losses++;
         guessesleft = 9;

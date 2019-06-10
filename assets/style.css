@@ -20,11 +20,18 @@ p {
 
 .game {
     float: left;
-    margin-left: 20%
+    margin-left: 20%;
+    margin-top: 11px
 }
 
 .image {
     float: right;
     height: 200px;
     margin-right: 20%
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    margin-top: 340px
 }

@@ -18,7 +18,7 @@ document.onkeyup = function (event) {
         wins++;
         guessesleft = 9;
         storeduserguess = [];
-        console.log(guessesleft)
+        
         // When there is a win. A guesses left is taken away.... I don't know why...
     }
     else if (userGuess !== computerGuess) {

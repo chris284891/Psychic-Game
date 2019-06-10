@@ -1,0 +1,18 @@
+* {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Luckiest guy', cursive;
+    font-size: 100px
+}
+
+p {
+    font-family: 'Cinzel', serif;
+}
+
+.instructions {
+    font-size: 30px;    
+}

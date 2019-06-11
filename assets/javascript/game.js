@@ -13,29 +13,26 @@ var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.l
 document.onkeyup = function (event) {
     var userGuess = event.key;
     storeduserguess.push(userGuess);
-    if (userGuess == computerChoices) {
-        if (userGuess === computerGuess) {
-            computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-            wins++;
-            guessesleft = 9;
-            storeduserguess = [];
-
-            // When there is a win. A guesses left is taken away.... I don't know why...
-        }
-        else if (userGuess !== computerGuess) {
-            guessesleft--;
-        }
-        if (guessesleft === 0) {
-            computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-            losses++;
-            guessesleft = 9;
-            storeduserguess = [];
-        }
-        winsText.textContent = "Wins: " + wins;
-        lossesText.textContent = "Losses: " + losses;
-        guessesleftText.textContent = "Guesses left: " + guessesleft;
-        userguessesText.textContent = "You guessed: " + storeduserguess;
-        // open up the console if you want to be a cheater...
-        console.log(computerGuess);
+    if (userGuess === computerGuess) {
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        wins++;
+        guessesleft = 9;
+        storeduserguess = [];
     }
+    else if (userGuess !== computerGuess) {
+        guessesleft--;
+    }
+    if (guessesleft === 0) {
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        losses++;
+        guessesleft = 9;
+        storeduserguess = [];
+    }
+    winsText.textContent = "Wins: " + wins;
+    lossesText.textContent = "Losses: " + losses;
+    guessesleftText.textContent = "Guesses left: " + guessesleft;
+    userguessesText.textContent = "You guessed: " + storeduserguess;
+    // open up the console if you want to be a cheater...
+    console.log(computerGuess);
+    console.log(userGuess)
 };

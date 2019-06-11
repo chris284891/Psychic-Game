@@ -15,23 +15,24 @@ p {
 
 .instructions {
     font-size: 30px;
-    text-align: center    
+    text-align: center;    
 }
 
 .game {
     float: left;
     margin-left: 20%;
-    margin-top: 11px
+    margin-top: 225px;
 }
 
 .image {
     float: right;
     height: 200px;
-    margin-right: 20%
+    margin-right: 20%;
+    margin-top: 165px;
 }
 
 .copyright {
     clear: both;
     text-align: center;
-    margin-top: 340px
+    margin-top: 500px;
 }

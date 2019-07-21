@@ -5,7 +5,7 @@ https://chris284891.github.io/Psychic-Game/
 This is my first JavaScript application.
 
 # Problem
-Make a game so user has to guess what letter the computer had picked.
+Make a game so user has to guess what letter the computer has picked.
 
 # Solution
 Made an array of all letters and a random number generator for the computer's letter. Made an onkey function for user guess. Made if statements for correct and incorrect guesses.

@@ -1,5 +1,5 @@
 # Link
-https://chris284891.github.io/Psychic-Game/
+https://swedishkinda.github.io/Psychic-Game/
 
 # Psychic-Game
 This is a letter guessing game.

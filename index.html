@@ -11,11 +11,12 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <title>Psychic Game</title>
   </head>
 
@@ -26,20 +27,29 @@
         <strong>Guess what letter I am thinking of...</strong>
       </p>
     </div>
-    <div class="row center-xs middle-xs m-5">
-      <div class="contrast-box col-6 p-5 middle-xs rounded">
+    <div class="row m-5 middle-xs">
+      <div class="col-lg-6 col-12 order-lg-last mb-3 mb-lg-0">
+        <img
+          class="w-100 d-block mx-auto rounded"
+          src="assets/images/crossingoversp.jpg"
+          style="max-width: 600px"
+        />
+      </div>
+      <div class="contrast-box col-lg-6 col-12 p-5 rounded">
         <div class="bg-dark border border-white rounded p-5">
-        <p id="wins-text">Wins: 0</p>
-        <p id="losses-text">Losses: 0</p>
-        <p id="guessesleft-text">Guesses left: 9</p>
-        <p id="usersguesses-text">You guessed:</p>
+          <p id="wins-text">Wins: 0</p>
+          <p id="losses-text">Losses: 0</p>
+          <p id="guessesleft-text">Guesses left: 9</p>
+          <p id="usersguesses-text">You guessed:</p>
         </div>
       </div>
-      <div class="col-6">
-        <img class="w-100 d-block mx-auto rounded" src="assets/images/crossingoversp.jpg" style="max-width: 600px;"/>
-      </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
   </body>
 
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>

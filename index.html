@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Alfa+Slab+One|Cinzel|Luckiest+Guy&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme|Alfa+Slab+One|Cinzel|Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Psychic Game</title>
-</head>
-<body>
-    <h1>The Psychic Game</h1>
-    <div>
-        <p class="instructions"><strong>Guess what letter I am thinking of...</strong></p>
-        <div class="game">
-            <p id="wins-text">Wins: 0</p>
-            <p id="losses-text">Losses: 0</p>
-            <p id="guessesleft-text">Guesses left: 9</p>
-            <p id="usersguesses-text">You guessed: </p>
-        </div>
-        <img class="image" src="assets/images/crossingoversp.jpg">
-        <div class="copyright">Copyright ©</div>
+  </head>
+
+  <body>
+    <div class="contrast-box mt-5 p-2 w-50 mx-auto rounded">
+      <h1 class="mt-2">The Psychic Game</h1>
+      <p class="text-center">
+        <strong>Guess what letter I am thinking of...</strong>
+      </p>
     </div>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-</body>
+    <div class="row center-xs middle-xs m-5">
+      <div class="contrast-box col-6 p-5 middle-xs rounded">
+        <div class="bg-dark border border-white rounded p-5">
+        <p id="wins-text">Wins: 0</p>
+        <p id="losses-text">Losses: 0</p>
+        <p id="guessesleft-text">Guesses left: 9</p>
+        <p id="usersguesses-text">You guessed:</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <img class="w-100 d-block mx-auto rounded" src="assets/images/crossingoversp.jpg" style="max-width: 600px;"/>
+      </div>
+    </div>
+    <div class="copyright">Copyright ©</div>
+  </body>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>

@@ -1,5 +1,10 @@
 * {
+    color: white;
+}
+
+body {
     background-color: black;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
     color: white;
 }
 
@@ -13,26 +18,11 @@ p {
     font-family: 'Cinzel', serif;
 }
 
-.instructions {
-    font-size: 30px;
-    text-align: center;    
-}
-
-.game {
-    float: left;
-    margin-left: 20%;
-    margin-top: 225px;
-}
-
-.image {
-    float: right;
-    height: 200px;
-    margin-right: 20%;
-    margin-top: 165px;
-}
-
 .copyright {
-    clear: both;
     text-align: center;
     margin-top: 500px;
+}
+
+div.contrast-box {
+    background: rgba(0, 0, 0, 0.7);
 }
